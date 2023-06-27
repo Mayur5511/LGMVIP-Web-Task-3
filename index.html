@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="nav-bar d-flex">
+    <h2>STUDENT ENROLLMENT FORM</h2>
+</div>
+<div class="students row">
+
+  <div class="enroll-student col-md">
+
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group row">
+              <label for="image" class="col-sm-2 col-form-label">Image link</label>
+              <div class="col-sm-10">
+                  <input type="url" class="form-control" id="image" required />
+                  <div class="invalid-feedback"></div>
+              </div>
+          </div>
+
+     
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <fieldset class="form-group row">
+              <legend class="col-form-label col-sm-2 float-sm-left pt-0">
+                  Skills
+              </legend>
+              <div class="col-sm-10">
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" name="skill" id="java" value="Java"/>
+                      <label class="form-check-label" for="java">
+                          Java
+                      </label>
+                      &nbsp;
+                      <div class="invalid-feedback">
+                                                </div>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" name="skill" id="html" value="HTML"/>
+                      <label class="form-check-label" for="html">
+                          HTML
+                      </label>
+                      &nbsp;
+                      <div class="invalid-feedback">
+                          
+                      </div>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" name="skill" id="css" value="CSS"/>
+                      <label class="form-check-label" for="css">
+                          CSS
+                      </label>
+                      &nbsp;
+                      <div class="invalid-feedback">
+                                                </div>
+                  </div>
+              </div>
+          </fieldset>
+          <button type="submit" class="btn btn-primary">Enroll Student</button> &nbsp; &nbsp; &nbsp;
+          <button type="reset" class="btn btn-danger">Cancel</button>
+      </form>
+  </div>
+
+
+  <div id="enrolled-students" class="col-md col-12">
+      <div class="enroll-heading">
+          <h2>Enrolled Students</h2>
+      </div>
+      <span id="span"></span>
+  </div>
+</div>
+
+              <script src="script.js"></script>
+</body>
+</html>
